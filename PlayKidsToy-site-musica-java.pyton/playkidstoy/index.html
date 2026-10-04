@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08aeea">
+  <meta name="description" content="PlayKidsToy — brinquedos divertidos, ofertas especiais e presentes para todas as idades.">
+  <title>PlayKidsToy | Brinquedos & Diversão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="snow-layer" id="snowLayer" aria-hidden="true"></div>
+  <div class="announcement">🎉 OFERTA ESPECIAL: leve 3 brinquedos acima de R$ 30 por apenas <strong>R$ 70,00</strong>! 🎁</div>
+
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="PlayKidsToy - início">
+      <span class="brand-badge">🧸</span>
+      <span><b>Play</b><i>Kids</i><strong>Toy</strong></span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Abrir busca">🔎</button>
+      <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">🛒 <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="pill">✨ DIVERSÃO GARANTIDA</span>
+        <h1>Brinquedos que<br><span>fazem a infância</span> mais divertida!</h1>
+        <p>Encontre brinquedos incríveis, ofertas especiais e presentes para transformar qualquer dia em uma aventura.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#ofertas">Ver ofertas 🔥</a>
+          <a class="btn btn-light" href="#produtos">Explorar brinquedos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div>🚚 <strong>Envio rápido</strong><small>Para todo o Brasil</small></div>
+      <div>🔒 <strong>Compra segura</strong><small>Pagamento protegido</small></div>
+      <div>💝 <strong>Presentes incríveis</strong><small>Para todas as idades</small></div>
+      <div>💬 <strong>Atendimento</strong><small>Fale com a gente</small></div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="section-heading">
+        <div><span class="eyebrow">ENCONTRE SEU FAVORITO</span><h2>Explore por categoria 🎈</h2></div>
+        <p>Escolha uma categoria e encontre a diversão perfeita.</p>
+      </div>
+      <div class="category-grid">
+        <button class="category cat-blue" data-category="todos">🧸<span>Todos</span></button>
+        <button class="category cat-yellow" data-category="educativos">🧩<span>Educativos</span></button>
+        <button class="category cat-red" data-category="carrinhos">🚗<span>Carrinhos</span></button>
+        <button class="category cat-purple" data-category="jogos">🎲<span>Jogos</span></button>
+        <button class="category cat-green" data-category="kits">🎁<span>Kits & Presentes</span></button>
+      </div>
+    </section>
+
+    <section class="offer-banner" id="ofertas">
+      <div class="offer-copy"><span>🔥 OFERTA RELÂMPAGO</span><h2>3 brinquedos<br>por <b>R$ 70,00</b></h2><p>Escolha entre os itens com preço de R$ 30 ou mais e garanta o desconto.</p></div>
+      <div class="offer-stars">★ ★ ★</div>
+      <a href="#produtos" class="btn btn-dark">Aproveitar oferta</a>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="section-heading products-heading">
+        <div><span class="eyebrow">MAIS QUERIDOS</span><h2>Ofertas da PlayKidsToy 🛍️</h2></div>
+        <div class="search-wrap" id="searchWrap"><input id="searchInput" type="search" placeholder="Buscar brinquedo..." aria-label="Buscar brinquedo"><span>⌕</span></div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading centered"><div><span class="eyebrow">QUEM COMPRA, AMA</span><h2>O que nossos clientes dizem ⭐</h2></div></div>
+      <div class="testimonial-grid">
+        <article><div class="stars">★★★★★</div><p>“Meu filho amou! A entrega foi rápida e o brinquedo chegou muito bem embalado.”</p><strong>Mariana S.</strong><small>Cliente verificada</small></article>
+        <article><div class="stars">★★★★★</div><p>“Adorei as ofertas. Consegui comprar presentes para os meus sobrinhos sem gastar muito.”</p><strong>Camila R.</strong><small>Cliente verificada</small></article>
+        <article><div class="stars">★★★★★</div><p>“Site fácil de usar e atendimento muito simpático. Com certeza vou comprar novamente!”</p><strong>Lucas A.</strong><small>Cliente verificado</small></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-badge">🧸</span><span><b>Play</b><i>Kids</i><strong>Toy</strong></span></a><p>Diversão, criatividade e muita alegria em um só lugar. 💖</p></div>
+    <div><h3>Loja</h3><a href="#produtos">Brinquedos</a><a href="#ofertas">Ofertas</a><a href="#categorias">Categorias</a></div>
+    <div><h3>Ajuda</h3><a href="#contato">Fale conosco</a><a href="#">Entrega</a><a href="#">Trocas e devoluções</a></div>
+    <div><h3>Atendimento</h3><p>📱 WhatsApp<br><strong>(00) 00000-0000</strong></p><p>✉️ atendimento@playkidstoy.com.br</p></div>
+    <div class="footer-bottom">© 2026 PlayKidsToy. Todos os direitos reservados.</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><h2>Seu carrinho 🛒</h2><button id="closeCart">✕</button></div>
+    <div id="cartItems" class="cart-items"><div class="empty-cart">Seu carrinho está vazio.<br><span>Adicione alguns brinquedos! 🧸</span></div></div>
+    <div class="cart-footer"><div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><button class="btn btn-primary checkout" id="checkoutBtn">Finalizar compra</button></div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="music-player" id="musicPlayer" aria-label="Controle da música infantil">
+    <audio id="bgMusic" loop preload="auto">
+      <source src="assets/playkidstoy-music.wav" type="audio/wav">
+    </audio>
+    <div class="music-info"><span class="music-note">🎵</span><div><strong>Musiquinha PlayKidsToy</strong><small id="musicStatus">Clique para tocar</small></div></div>
+    <div class="music-controls">
+      <button id="musicPlay" class="music-btn" aria-label="Tocar música">▶</button>
+      <button id="musicMute" class="music-btn" aria-label="Mutar música">🔊</button>
+      <input id="musicVolume" class="music-volume" type="range" min="0" max="1" step="0.01" value="0.35" aria-label="Volume da música">
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Produto adicionado ao carrinho! 🛒</div>
+  <script src="script.js"></script>
+</body>
+</html>
